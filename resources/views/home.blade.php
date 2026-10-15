@@ -183,6 +183,35 @@
         </form>
     </div>
 </div>
+        <!-- Bagian Form Pertanyaan yang rapi (Bootstrap) -->
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Form Pertanyaan</h5>
+
+            <form action="{{ route('question.store') }}" method="POST">
+                @csrf
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" name="nama" id="nama" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pertanyaan" class="form-label">Pertanyaan</label>
+                    <textarea name="pertanyaan" id="pertanyaan" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+{{-- Alerts --}}
                 {{-- Alerts --}}
                 <div class="card ">
                     <div class="card-body">
@@ -251,6 +280,7 @@
         </div>
     </section>
 
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
