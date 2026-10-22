@@ -5,6 +5,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\AuthController; // <-- Tambahkan baris ini
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -47,3 +49,6 @@ Route::get('/form-login', function () {
 
 // 2. Arahkan proses login ke AuthController
 Route::post('/proses-login', [AuthController::class, 'login']);
+
+Route::resource('user', UserController::class);
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
