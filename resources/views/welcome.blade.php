@@ -6,9 +6,13 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+<<<<<<< HEAD
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+=======
+        @fonts
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -28,7 +32,11 @@
                             href="{{ url('/dashboard') }}"
                             class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal"
                         >
+<<<<<<< HEAD
                             Home
+=======
+                            Dashboard
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
                         </a>
                     @else
                         <a
@@ -120,7 +128,11 @@
 
                     <p class="mt-6 lg:mt-10 text-[#706f6c] dark:text-[#A1A09A]">
                         v{{ app()->version() }}
+<<<<<<< HEAD
                         <a href="https://github.com/laravel/laravel/blob/13.x/CHANGELOG.md" target="_blank" class="inline-flex items-center space-x-1 font-medium underline underline-offset-4 text-[#f53003] dark:text-[#FF4433] ml-1">
+=======
+                        <a href="https://github.com/laravel/framework/blob/13.x/CHANGELOG.md" target="_blank" class="inline-flex items-center space-x-1 font-medium underline underline-offset-4 text-[#f53003] dark:text-[#FF4433] ml-1">
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
                             <span>View changelog</span>
                             <svg
                                 width="10"
@@ -221,11 +233,14 @@
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
+<<<<<<< HEAD
 
         <h1 class="mb-1 font-medium">Let's get started</h1>
 
         <!-- Contoh penggunaan route pada tag href -->
         <a href="{{ route('mahasiswa.show') }}">Klik Disini</a> 
         
+=======
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
     </body>
 </html>

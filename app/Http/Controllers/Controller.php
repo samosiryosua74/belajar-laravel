@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -17,3 +18,9 @@ class AuthController extends Controller
         // $password = $request->input('password');
     }
 }
+=======
+abstract class Controller
+{
+    //
+}
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67

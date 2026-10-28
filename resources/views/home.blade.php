@@ -82,8 +82,13 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
+<<<<<<< HEAD
             <h1 class="display-6 mb-2">Welcome Aboard!</h1>
             <p class="lead mb-0">A simple and elegant app using Bootstrap 5 and Laravel Blade.</p>
+=======
+            <h1 class="display-6 mb-2">{{ $username }}</h1>
+            <p class="lead mb-0">{{ $last_login }}</p>
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
         </div>
     </section>
 
@@ -153,6 +158,7 @@
             </div>
 
             <div class="col-md-6">
+<<<<<<< HEAD
                 <div class="card">
                     <div class="card-body">
                      <h5 class="card-title">Form Pertanyaan</h5>
@@ -212,6 +218,8 @@
 
 
 {{-- Alerts --}}
+=======
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
                 {{-- Alerts --}}
                 <div class="card ">
                     <div class="card-body">
@@ -280,7 +288,10 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
