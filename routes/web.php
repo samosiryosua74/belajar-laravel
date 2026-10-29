@@ -1,22 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\MatakuliahController;
-use App\Http\Controllers\AuthController; // <-- Tambahkan baris ini
-use App\Http\Controllers\UserController;
-=======
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
->>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PelangganController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
+
 Route::get('/pcr', function () {
     return 'Selamat Datang di Website Kampus PCR!';
 });
@@ -57,7 +55,9 @@ Route::post('/proses-login', [AuthController::class, 'login']);
 
 Route::resource('user', UserController::class);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-=======
+
 Route::get('/home',[HomeController::class,'index']);
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
->>>>>>> ba5fca1abc89e2fab92fd366787567bf06174d67
+
+Route::get('/pelanggan/create', [PelangganController::class, 'create']);
+Route::resource('pelanggan', PelangganController::class);
